@@ -90,6 +90,17 @@ void MainWindow::setupRealtimeDataDemo(QCustomPlot *customPlot)
     timeTicker->setTimeFormat("%m:%s:%z");
     customPlot->xAxis->setTicker(timeTicker);
     customPlot->axisRect()->setupFullAxesBox();
+
+    // Create and set the custom ticker for the y axis
+    QSharedPointer<QCPAxisTickerText> textTicker(new QCPAxisTickerText);
+    textTicker->addTick(0, "Channel 1");
+    textTicker->addTick(1.1, "Channel 2");
+    textTicker->addTick(2.2, "Channel 3");
+    textTicker->addTick(3.3, "Channel 4");
+    textTicker->addTick(4.4, "Channel 5");
+    textTicker->addTick(5.5, "Channel 6");
+    customPlot->yAxis->setTicker(textTicker);
+
     customPlot->yAxis->setRange(-0.1, 6.6);
 
     connect(customPlot->xAxis, SIGNAL(rangeChanged(QCPRange)), customPlot->xAxis2, SLOT(setRange(QCPRange)));
