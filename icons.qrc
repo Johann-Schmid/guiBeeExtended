@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/file.ico</file>
+        <file>img/usb.ico</file>
+        <file>img/start.ico</file>
+        <file>img/stop.ico</file>
+        <file>img/bee.ico</file>
+    </qresource>
+</RCC>

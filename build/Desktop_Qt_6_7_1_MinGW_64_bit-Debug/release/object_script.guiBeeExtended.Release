@@ -1,0 +1,10 @@
+release/main.o
+release/mainwindow.o
+release/mysave.o
+release/mythread.o
+release/qcustomplot.o
+release/qrc_icons.o
+release/moc_mainwindow.o
+release/moc_mysave.o
+release/moc_mythread.o
+release/moc_qcustomplot.o
