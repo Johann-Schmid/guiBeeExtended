@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainwindow.o
+debug/mysave.o
+debug/mythread.o
+debug/qcustomplot.o
+debug/qrc_icons.o
+debug/moc_mainwindow.o
+debug/moc_mysave.o
+debug/moc_mythread.o
+debug/moc_qcustomplot.o
